@@ -1,6 +1,6 @@
 # VIVIDIA
 
-![VIVIDIA](./assets/logo.png)
+![VIVIDIA](./assets/logo.jpg)
 
 ## [->**DOWNLOAD Latest**<-](https://github.com/zeddo-dev/VIVIDIA/releases/latest)
 
