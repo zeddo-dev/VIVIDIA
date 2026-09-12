@@ -1,6 +1,6 @@
 # VIVIDIA technical details
 
-How the colour settings are applied, which limits Windows imposes, how to build VIVIDIA and how
+How the color settings are applied, which limits Windows imposes, how to build VIVIDIA and how
 the source is laid out. For what the application does and how to use it, see the
 [README](README.md).
 
