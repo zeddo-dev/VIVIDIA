@@ -9,15 +9,15 @@ Two builds, both a single file, no installer:
 - **VIVIDIA-lite.exe** (~1 MB): needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
 - **VIVIDIA.exe** (~63 MB): everything inside, just run it
 
-Per-application colour settings for Windows. Set brightness, contrast, gamma and digital vibrance
+Per-application color settings for Windows. Set brightness, contrast, gamma and digital vibrance
 for a game, and they apply only while that game is in focus.
 
 ## How it works?
 
 - Changes brightness, contrast and gamma through the GPU LUT ([SetDeviceGammaRamp](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-setdevicegammaramp))
 - Changes digital vibrance through NVAPI (NVIDIA) and ADL (AMD)
-- Watches the foreground window, so colours switch the moment you alt-tab
-- Your normal colours are saved before the first change and restored when the game closes, so a
+- Watches the foreground window, so colors switch the moment you alt-tab
+- Your normal colors are saved before the first change and restored when the game closes, so a
   crash cannot leave the screen stuck with a game's gamma
 
 ## Supported graphic cards
@@ -46,7 +46,7 @@ Light and dark themes, start with Windows and start minimized to tray are in Set
 
 1. Open the application (SmartScreen might warn you as it's not signed)
 2. **Add profile**: type the process name or pick a running application
-3. Set the colour values. **Preview** shows them live, **Reset to neutral** puts them back
+3. Set the color values. **Preview** shows them live, **Reset to neutral** puts them back
 4. Minimize to tray and play
 5. Profiles are saved automatically to `%APPDATA%\VIVIDIA`
 
