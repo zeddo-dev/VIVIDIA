@@ -6,8 +6,8 @@
 
 Two builds, both a single file, no installer:
 
-- **VIVIDIA.exe** (~63 MB): everything inside, just run it
 - **VIVIDIA-lite.exe** (~1 MB): needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
+- **VIVIDIA.exe** (~63 MB): everything inside, just run it
 
 Per-application colour settings for Windows. Set brightness, contrast, gamma and digital vibrance
 for a game, and they apply only while that game is in focus.
