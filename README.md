@@ -4,14 +4,6 @@
 
 ## [**Download latest**](https://github.com/zeddo-dev/VIVIDIA/releases/latest)
 
-Two builds, both a single file, no installer:
-
-- **VIVIDIA-lite.exe** (~1 MB): needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
-- **VIVIDIA.exe** (~63 MB): everything inside, just run it
-
-Per-application color settings for Windows. Set brightness, contrast, gamma and digital vibrance
-for a game, and they apply only while that game is in focus.
-
 ## How it works?
 
 - Changes brightness, contrast and gamma through the GPU LUT ([SetDeviceGammaRamp](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-setdevicegammaramp))
@@ -41,6 +33,15 @@ You can set any of the following per application:
 Light and dark themes, start with Windows and start minimized to tray are in Settings.
 
 ![screenshot](./assets/UI-screenshot.jpg)
+
+
+Two builds, both a single file, no installer:
+
+- **VIVIDIA-lite.exe** (~1 MB): needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
+- **VIVIDIA.exe** (~63 MB): everything inside, just run it
+
+Per-application color settings for Windows. Set brightness, contrast, gamma and digital vibrance
+for a game, and they apply only while that game is in focus.
 
 ## How to Use
 
