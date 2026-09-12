@@ -2,7 +2,7 @@
 
 ![VIVIDIA](./assets/logo.jpg)
 
-## [->**DOWNLOAD Latest**<-](https://github.com/zeddo-dev/VIVIDIA/releases/latest)
+## [**Download latest**](https://github.com/zeddo-dev/VIVIDIA/releases/latest)
 
 Two builds, both a single file, no installer:
 
