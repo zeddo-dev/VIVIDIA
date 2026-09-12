@@ -40,8 +40,7 @@ You can set any of the following per application:
 
 Light and dark themes, start with Windows and start minimized to tray are in Settings.
 
-<!-- Drop a screenshot of the window here as assets/screenshot.png and it shows up: -->
-<!-- ![screenshot](./assets/screenshot.png) -->
+![screenshot](./assets/interface.jpg)
 
 ## How to Use
 
