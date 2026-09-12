@@ -4,20 +4,6 @@
 
 ## [**Download latest**](https://github.com/zeddo-dev/VIVIDIA/releases/latest)
 
-## How it works?
-
-- Changes brightness, contrast and gamma through the GPU LUT ([SetDeviceGammaRamp](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-setdevicegammaramp))
-- Changes digital vibrance through NVAPI (NVIDIA) and ADL (AMD)
-- Watches the foreground window, so colors switch the moment you alt-tab
-- Your normal colors are saved before the first change and restored when the game closes, so a
-  crash cannot leave the screen stuck with a game's gamma
-
-## Supported graphic cards
-
-- Nvidia GPU **fully supported.** (Brightness/Contrast/Gamma/Vibrance)
-- AMD GPU **supported.** (Brightness/Contrast/Gamma/Vibrance)
-- Intel **partially supported.** (Except Vibrance)
-
 ## What does it do?
 
 You can set any of the following per application:
@@ -32,16 +18,21 @@ You can set any of the following per application:
 
 Light and dark themes, start with Windows and start minimized to tray are in Settings.
 
-![screenshot](./assets/UI-screenshot.jpg)
+![screenshot](./assets/UI-screenshot.jpg) -->
 
+## How it works?
 
-Two builds, both a single file, no installer:
+- Changes brightness, contrast and gamma through the GPU LUT ([SetDeviceGammaRamp](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-setdevicegammaramp))
+- Changes digital vibrance through NVAPI (NVIDIA) and ADL (AMD)
+- Watches the foreground window, so colors switch the moment you alt-tab
+- Your normal colors are saved before the first change and restored when the game closes, so a
+  crash cannot leave the screen stuck with a game's gamma
 
-- **VIVIDIA-lite.exe** (~1 MB): needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
-- **VIVIDIA.exe** (~63 MB): everything inside, just run it
+## Supported graphic cards
 
-Per-application color settings for Windows. Set brightness, contrast, gamma and digital vibrance
-for a game, and they apply only while that game is in focus.
+- Nvidia GPU **fully supported.** (Brightness/Contrast/Gamma/Vibrance)
+- AMD GPU **supported.** (Brightness/Contrast/Gamma/Vibrance)
+- Intel **partially supported.** (Except Vibrance)
 
 ## How to Use
 
@@ -62,6 +53,17 @@ for a game, and they apply only while that game is in focus.
 5. Applications are matched by **process name**
 6. In a **Remote Desktop session** the monitor is virtual and ignores the LUT, so brightness,
    contrast and gamma do nothing there, and the status line says so
+
+## Anti-Cheat Safety
+
+VIVIDIA runs purely as a desktop-level display utility. It does not touch game files or memory.
+
+- **No Code Injection:** VIVIDIA never injects DLLs, hooks DirectX/Vulkan/OpenGL, or attaches to game processes.
+- **Official GPU APIs:** Digital vibrance is adjusted using standard vendor APIs (NVIDIA NVAPI and AMD ADL) - the same calls used by NVIDIA Control Panel and AMD Software.
+- **Hardware Ramp LUTs:** Gamma, contrast, and brightness are modified via standard Windows display Lookup Tables (Ramp LUTs) at the OS level.
+- **Process Detection:** Profile switching only checks active process names to detect when a game is in focus. It does not open handles to read or write game memory.
+
+Because everything happens at the display driver layer outside the game process, it is safe to use alongside common anti-cheats
 
 ## Technical details
 
